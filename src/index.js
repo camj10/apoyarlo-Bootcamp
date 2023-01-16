@@ -1,17 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import {PersonCard} from './PersonCard'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <div>
+    <PersonCard lastName="Perez" firstName="Juan" age={20} hairColor= "brown"></PersonCard>
+    <PersonCard lastName="Piris" firstName="Juan" age={22} hairColor= "black"></PersonCard>
+    <PersonCard lastName="Franco" firstName="Maria" age={24} hairColor= "brown"></PersonCard>
+    <PersonCard lastName="Fretez" firstName="Juliana" age={21} hairColor= "black"></PersonCard>
+  </div>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
